@@ -1,0 +1,357 @@
+
+* {
+    margin: 0%;
+    list-style: none;
+    size: 100%;
+    overflow-x: hidden;
+}
+
+/*Aplicamos Css al header*/
+header {
+    background-image: url("src/azul-oscuro.png");
+    
+}
+
+.aplication-name {
+    font-size: 20px;
+    color: rgb(185, 211, 245);
+}
+
+header nav ul li {
+    font-size: 20px;
+    color: rgb(185, 211, 245);
+    text-align: right;
+    display: inline-block;
+    left: 66%;
+    padding-bottom: 5px;
+    
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 30px;
+}
+
+.menu-nav div {
+    padding-left: 20px;
+    font-size: 20px;
+    color: rgb(185, 211, 245);
+}
+    
+
+
+/*Finaliza css para header*/
+
+/*Aplico Css a la seccion 1, tanto a lo escrito como al fondo*/
+.seccion-1 {
+    background-color: rgb(45, 45, 180);
+    width: 100%;
+    height: 330px;
+}
+
+h1 {
+    font-size: 4em;
+    color: rgb(250, 239, 218);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.lorem1 {
+    font-size: 1.5em;
+    color: rgb(250, 239, 218);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+button {
+    position: relative;
+    left: 32%;
+    top: 40px;
+    width: 240px;
+    height: 61px;
+    border-radius: 30px; 
+}
+
+.button1 {
+    background-color: white;
+    font-size: 20px;
+}
+
+.button2 {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+/*Finaliza la seccion 1*/
+
+/* Seccion 2, 3 y 4 */
+/* aplico grid a la seccion 1 */
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 130px;
+}
+
+.grid-container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 130px;
+    height: 800px;
+    padding-top: 300px;
+    overflow-y: hidden;
+}
+.multimedia-left-grid {
+    display: flex;
+    height: 560px;
+    width: 650px;
+    align-items: center;
+    justify-items: center;
+    margin-left: 150px;
+}
+
+.texto-derecha-grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.parrafo-derecha-grid {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    margin-top: -100px;
+}
+
+
+.h2-derecha-grid {
+    font-size: 40px;
+    color: rgb(32, 32, 32);
+    text-align: right;
+    letter-spacing: 2px;
+    margin-left: 42px;
+    height: 50px;
+    overflow-y: hidden;
+}
+    /* Termina el grid de la seccion 2 */
+    
+section {
+    background-color: cornflowerblue;
+    background-size: 100%;
+}
+
+
+.section-3 {
+    display: flex;
+    align-content: space-around;
+    margin-left: 150px;
+    margin-top: 300px;
+}
+
+.multimedia-rigth {
+    padding-left: 170px;
+}
+
+.h2-derecha {
+    font-size: 50px;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    letter-spacing: 2px;
+    top: 175px;
+    right: 83px;
+    display: flex;
+    align-content: center;
+
+}
+
+.h2-izquierda {
+    font-size: 40px;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 42px;
+    height: 160px;
+    overflow-y: hidden;
+}
+
+
+.parrafo-derecha {
+    font-size: 30px;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+
+.parrafo-izquierda {
+    font-size: 25px;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    width: 700px;
+    height: 201px;
+    overflow-y: hidden;
+    align-content: flex-end;
+}
+/*finalizan secciones 2, 3 y 4*/
+
+/*Css para el footer*/
+footer {
+    background-image: url("src/gris-oscuro.svg");
+    height: 100%;
+}
+
+footer ul {
+    display: inline-block;
+
+}
+
+.newletter {
+    width: 100px;
+    overflow-x: hidden;
+}
+
+h5 {
+    font-size: 1.1em;
+    color: rgb(185, 211, 245);
+    text-align: left;
+    overflow-y: hidden;
+}
+
+footer ul li {
+    font-size: 1em;
+    color: rgb(250, 239, 218);
+    text-align: left;
+}
+
+.registerbutton {
+    position: relative;
+    left: 90%;
+    top: -9px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px; 
+    background-color: rgb(111, 0, 255);
+    font-size: 15px;
+    color: white;
+}
+
+.listas-container {
+    display: flex;
+    justify-content: end;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+
+
+/* CSS contacto.html */
+
+.p-contacto {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+    left: 60px;
+    padding-right: 90px;
+}
+
+.h2-contacto {
+    position: relative;
+    top: 20px;
+    left: 60px;
+}
+
+.h1-contacto {
+    font-size: 4em;
+    color: rgb(250, 239, 218);
+    text-align: left;
+    letter-spacing: 2px;
+    position: relative;
+    left: 5%;
+}
+
+section form {
+    position: relative;
+    top: 60px;
+    padding-bottom: 160px;
+    left: 235px;
+}
+
+/* Finaliza css para contacto.html */
+
+/* Css ayuda.html */
+
+
+.FAQs {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.soluciones {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Medias queries */
+
+@media screen and (max-width: 480px) {
+    section {
+        background-color: rgb(140, 178, 250);
+    }
+
+    .seccion-1 {
+        background-color: rgb(45, 45, 180);
+        width: 100%;
+        height: 530px;
+    }
+
+    .parrafo-derecha-grid {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        color: rgb(32, 32, 32);
+        text-align: center;
+        letter-spacing: 1px;
+        margin-left: 50px;
+        margin-top: -100px;
+    }
+
+    .h2-derecha-grid {
+        font-size: 30px;
+        color: rgb(32, 32, 32);
+        text-align: right;
+        letter-spacing: 1px;
+        margin-left: 50px;
+    }
+    .parrafo-derecha-grid {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(32, 32, 32);
+        text-align: center;
+        letter-spacing: 1px;
+        margin-left: 50%;
+        margin-top: 10px;
+    }
+
+    .multimedia-left-grid {
+        display: flex;
+        height: 560px;
+        width: 650px;
+        align-items: center;
+        justify-items: center;
+    }
+    
+}
+

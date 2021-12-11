@@ -1,0 +1,54 @@
+@import "componentes/section-one";
+@import "componentes/footer";
+@import "componentes/sections";
+@import "componentes/register-form";
+@import "componentes/signin-form";
+@import "componentes/ayuda";
+@import "componentes/contacto";
+
+
+
+* {
+    margin: 0%;
+    list-style: none;
+    size: 100%;
+    overflow-x: hidden;
+}
+
+/*Aplicamos Css al header*/
+header {
+    background-color: rgb(46, 46, 250);
+    
+}
+
+    nav{
+        ul {
+            li {
+                font-size: 20px;
+                color: honeydew;
+                text-align: right;
+                display: inline-block;
+                left: 66%;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+.menu-nav {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 30px;
+}
+
+.menu-nav {
+    div {
+        padding-left: 20px;
+        font-size: 20px;
+        color: honeydew;
+    }
+}
+
+/*Finaliza css para header*/
+
+
+

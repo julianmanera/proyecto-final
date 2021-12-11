@@ -1,0 +1,44 @@
+/*Css para el footer*/
+footer {
+    background-color: rgb(46, 46, 46);
+    height: 100%;
+
+    .listas-container {
+        display: flex;
+        justify-content: end;
+        padding: 10px 30px;
+        flex-wrap: wrap;
+    }
+
+    div {
+
+        div {
+            h5 {
+                font-size: 1.1em;
+                color: rgb(185, 211, 245);
+                text-align: left;
+                overflow-y: hidden;
+            }
+
+            ul {
+                display: inline-block;
+                width: 100px;
+                overflow-x: hidden;
+
+                li {
+                    color: honeydew;
+                }
+            }
+
+            .copyrigth {
+                color: honeydew;
+            }
+
+            .newletter {
+                color: honeydew;
+            }
+        }
+    }
+}
+
+/* Finaliza CSS de footer */
