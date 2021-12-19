@@ -11,23 +11,25 @@ section {
     background-size: 100%;
 }
 
+.section-white {
+    background-color: rgb(218, 218, 218);
+}
 
-.grid-container-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 130px;
-    height: 800px;
+.section-grey {
+    background-color: rgb(211, 211, 211);
+}
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
     padding-top: 300px;
     overflow-y: hidden;
+    flex-wrap: wrap;
 
     .multimedia-left-grid {
 
         @media screen and (max-width: 480px) {
-            display: flex;
-            height: 560px;
-            width: 650px;
-            align-items: center;
-            justify-items: center;
+        
         }
 
         display: flex;
@@ -40,7 +42,7 @@ section {
 
     .texto-derecha-grid {
         display: grid;
-        justify-items: center;
+        justify-items: left;
         align-items: center;
         width: 600px;
         margin: 0;

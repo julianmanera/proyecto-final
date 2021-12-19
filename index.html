@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación | Tu lugar para conectarte a distancia</title>
+
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -30,11 +37,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <!-- Bootsrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f9036d8106.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- Los lorem no coinciden con los del wireframe porque es diferente el lorem que deja poner Whimsical -->
@@ -42,53 +51,58 @@
 
    <!-- Sección cabecera -->
    <header>
-    <!-- Comienca la barra navegable -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="container-fluid">
-        <a class="navbar-brand " href="index.html">
-            <!-- Esta imagen seria el logo de la aplicación -->
-          <img src="#" alt="" width="30" height="24" class="d-inline-block align-text-top" href="index.html">
-          Aplicación
-        </a>
-      </div>
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse show d-flex justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="ayuda.html">Ayuda</a>
-            <a class="nav-link" href="contacto.html">Contacto</a>
-            <a class="nav-link" href="descargar.html">Descagas</a>
-            <a class="nav-link" href="iniciar-sesion.html">Iniciar Sesión</a>
-            <a class="nav-link" href="registrarse.html">Registrarse</a>
-          </div>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-      <!-- Finaliza la barra navegable -->
-</header>
+   </header>
+   
+
     <!-- Finaliza la cabecerea -->
 
 
     <!-- Seccion 1 -->
 <div>
     <section class="seccion-1">
-        <div><h1>Descubri tu lugar</h1></div>
-        <div><p class="lorem1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eligendi id necessitatibus eos, quas voluptatum et ratione rerum, quam perspiciatis voluptate voluptatem saepe sit ut voluptas dicta? Dolores, corrupti cupiditate!</p></div>
-        <tr>
-            <button class="button1">Descargar para windows</button>
-            <button class="button2">Descargar para Mac OS</button>
-        </tr>
-    
+        <div><h1>IMAGINA UN LUGAR...</h1></div>
+        <div class="lorem-container"><p class="lorem1">... en el que puedas formar parte de un club escolar, un grupo de jugadores o una comunidad mundial de arte. En el que puedas pasar tiempo con unos cuantos amigos. Un lugar que haga que hablar a diario y divertirte más a menudo sea fácil.</p></div>
+        <button class="button1">Descargar para windows</button>
+        <button class="button2">Descargar para Mac OS</button>
     </section>
 </div>
 <!-- termina la seccion 1 -->
 
-<!-- Empieza la seccion 2, aplico grid en la seccion 2 porque al no tener productos ni imagenes donde sea mas claro es para completar el desafio. -->
-<section class="grid-container-1">
+ <!-- Empieza la seccion 2  -->
+<section class="section-white section-container">
     <div class="multimedia-left-grid">
-        <iframe width="800" height="400" src="https://www.youtube.com/embed/ksZZpbNuy6U" title="Video tutorial para aprender a usar la aplicación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="src/img-1.svg" alt="imagen de un servidor de discord con diferentes canales para estudiar, jugar, cocinar y subir fotos de mascotas">
     </div>
     <div class="texto-derecha-grid">
         <div>
@@ -103,23 +117,23 @@
 <!-- termina la seccion 2 -->
 
 <!-- Empieza la seccion 3 -->
-<section>
-    <div class="section-3" data-aos="fade-up"
+<section class="section-grey section-container">
+    <div class="section-container" data-aos="fade-up"
     data-aos-duration="1000">
         <div>
             <div class="h2-izquierda"><h2>Característica 2</h2></div>
             <div class="parrafo-izquierda"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quis consectetur corporis sint deleniti reiciendis nam eos. Distinctio officiis unde dolores nulla harum magnam repellat consectetur, soluta doloremque molestias saepe?</p></div>
         </div>
         <div class="multimedia-rigth" data-aos="fade-up"
-        data-aos-duration="1000"><img src="src/lista-de-amigos-discord.jpg" alt="Imagen de muestra con lista de amigos y comunidades de temas variados"width="800"><div>
+        data-aos-duration="1000"><img src="src/img2.svg" alt="Imagen de muestra con amigos hablando en diferentes chats de voz con diferentes tematicas"width="800"><div>
     </div>
 </section>
 <!-- Termina la seccion 3 -->
 
 <!-- Empieza la seccion 4 -->
-    <section class="grid-container-2">
+    <section class="section-white section-container">
         <div class="multimedia-left-grid" data-aos="fade-up"
-        data-aos-duration="1000"><img src="src/caracteristica1.png" alt="Imagen con mejor definicion de una lista de amigos y comunidades dentro de la aplicacion" width="800"></div>
+        data-aos-duration="1000"><img src="src/img3.svg" alt="Imagen de amigos dentro de un servidor con diferentes roles asignados" width="800"></div>
         <!-- Esta imagen o la de la seccion 3 tengo que cambiarla por una diferente para tener una caracteristica extra y que no muetren lo mismo -->
         <div class="texto-derecha-grid" data-aos="fade-up"
         data-aos-duration="1000">
@@ -134,62 +148,74 @@
 <!-- Pie de Pagina -->
 <footer>
   <div class="container">
-      <footer class="py-5">
-        <div class="row listas-container">
-          <div class="col-2">
-            <h5>Compañía<a href="http://" target="_blank" rel="noopener noreferrer"></a></h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sobre Nosotros</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Trabajos</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Marcas</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Noticias</a></li>
-            </ul>
-          </div>
+    <footer class="row row-cols-5 py-5 my-5 border-top">
+      <div class="col">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <p class="text-muted">© 2021</p>
+      </div>
+  
+      <div class="col">
+  
+      </div>
+  
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
 
-          <div class="col-2">
-              <h5>Políticas</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Condiciones</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacidad</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Directivas</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agradecimientos</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Licencias</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Moderación</a></li>
-              </ul>
-          </div>
-    
-          <div class="col-2">
-            <h5>Ayuda</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Soporte técnico</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Seguridad</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Opiniones</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
-            </ul>
-          </div>
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
 
-          <div class="col-4 offset-1 newletter">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of whats new and exciting from us.</p>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
-    
-        <div class="d-flex justify-content-between py-4 my-4 border-top">
-          <p class="copyrigth">© 2021 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-          </ul>
-        </div>
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
       </footer>
     </div>
 </footer>
